@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consumiendo Api Datos abiertos</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/Jquery.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+        <a
+          class="navbar-brand"
+          href="#"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          title="Información de los puntos vive digital instalados en el país. Es un espacio que garantiza el acceso a las Tecnologías de la Información y las Comunicaciones mediante un modelo de servicios sostenible que permite integrar a la comunidad en escenarios de acceso, capacitación, entretenimiento y otras alternativas de servicios TIC en un mismo lugar."
+          >Tarea Consumir Api | Puntos Vive Digital | Gustavo Andres Olmedo</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a id="Obtener_Datos_de_la_API" class="nav-link" href="#"
+                >Obtener Datos de la API</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a id="Obtener_Calculos_de_la_API" class="nav-link disabled text-secondary" href="#"
+                >Obtener Calculos</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a id="Limpiar_Todo" class="nav-link disabled text-secondary" href="#"
+                >Limpiar Todo</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container p-0 pt-5">
+      <div id="alertas" class="mb-1"></div>
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+          <strong>Nota para el profesor: </strong> Mi computadora no es muy potente por tanto solo cargue y examine 100 de los 1000 registros, para cargar todos los registros solo cambie el valor de la constante "cantidadDeArchivosAdividir" a "1"<br>Esta linea se encuentra dentro del archivo "main.js" en la linea numero 11.<br> Debe quedar asi "const cantidadDeArchivosAdividir = 1;"
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="accordion" id="accordionExample"></div>
+        </div>
+        <div class="col-md-4 calculos"></div>
+      </div>
+    </main>
+    <footer>
+      <script src="./js/main.js"></script>
+    </footer>
+  </body>
+</html>
